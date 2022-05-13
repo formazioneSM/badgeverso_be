@@ -1,4 +1,4 @@
-# SM-be (https://github.com/costa-dev1123/SM-be)
+# SM-be
 
 ## Installation
 
