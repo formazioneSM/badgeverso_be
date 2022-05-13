@@ -1,0 +1,446 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "SM Be",
+    "description": "System management s.p.a",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "securityDefinitions": {
+    "basicAuth": {
+      "type": "basic"
+    }
+  },
+  "host": "https://be-system.herokuapp.com",
+  "basePath": "/api",
+  "tags": [
+    {
+      "name": "Users",
+      "description": "API dipendenti system"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/auth/:badge": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "ottieni utenti attraverso il numero di badge",
+        "description": "",
+        "operationId": "searchByBadge",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Authorization",
+            "description": "Authorization",
+            "required": true
+          },
+          {
+            "in": "params",
+            "name": "badge",
+            "description": "Numero badge",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Users list",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/UserDTO"
+              }
+            }
+          },
+          "401": {
+            "description": "Not Authorized",
+            "schema": {
+              "$ref": "#/definitions/401"
+            }
+          }
+        },
+        "security": [
+          {
+            "sm_auth": [
+              "read:users"
+            ]
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "modifica un utente ricercandolo attraverso il suo numero di badge",
+        "description": "",
+        "operationId": "editUser",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Authorization",
+            "description": "Authorization",
+            "required": true
+          },
+          {
+            "in": "params",
+            "name": "badge",
+            "description": "Numero badge",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "badge",
+            "description": "Numero badge",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "utente modificato",
+            "schema": {
+              "$ref": "#/definitions/UserDTO"
+            }
+          },
+          "401": {
+            "description": "Not Authorized",
+            "schema": {
+              "$ref": "#/definitions/401"
+            }
+          }
+        },
+        "security": [
+          {
+            "sm_auth": [
+              "write:users"
+            ]
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "elimina un utente ricercandolo attraverso il suo numero di badge",
+        "description": "",
+        "operationId": "deleteUser",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Authorization",
+            "description": "Authorization",
+            "required": true
+          },
+          {
+            "in": "params",
+            "name": "badge",
+            "description": "Numero badge",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "utente eliminato",
+            "schema": {
+              "$ref": "#/definitions/UserDTO"
+            }
+          },
+          "401": {
+            "description": "Not Authorized",
+            "schema": {
+              "$ref": "#/definitions/401"
+            }
+          }
+        },
+        "security": [
+          {
+            "sm_auth": [
+              "write:users"
+            ]
+          }
+        ]
+      }
+    },
+    "/auth/checkToken": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "verifica la validità del tuo token",
+        "description": "",
+        "operationId": "checktoken",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Authorization",
+            "description": "Authorization",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Risultato verifica token",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not Authorized",
+            "schema": {
+              "$ref": "#/definitions/401"
+            }
+          }
+        },
+        "security": [
+          {
+            "sm_auth": [
+              "read:users"
+            ]
+          }
+        ]
+      }
+    },
+    "/auth/register": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "registra un nuovo dipendente",
+        "description": "",
+        "operationId": "register",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "user",
+            "type": "object",
+            "schema": {
+              "$ref": "#/definitions/UserDTO"
+            },
+            "description": "Utente da registrare",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Utente creato",
+            "schema": {
+              "$ref": "#/definitions/UserDTO"
+            }
+          },
+          "401": {
+            "description": "Not Authorized",
+            "schema": {
+              "$ref": "#/definitions/401"
+            }
+          }
+        }
+      }
+    },
+    "/auth/login": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "login",
+        "description": "",
+        "operationId": "login",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "user",
+            "type": "object",
+            "properties": {
+              "email": {
+                "type": "string",
+                "required": true
+              },
+              "password": {
+                "type": "string",
+                "required": true
+              }
+            },
+            "description": "info login",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "login successfull",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string"
+                },
+                "token": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not Authorized",
+            "schema": {
+              "$ref": "#/definitions/401"
+            }
+          }
+        }
+      }
+    },
+    "/auth/forgotPassword/:id": {
+      "put": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "login",
+        "description": "",
+        "operationId": "forgotPassword",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "params",
+            "name": "id",
+            "type": "string",
+            "description": "id utente",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "description": "Authorization",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "cambio pass",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not Authorized",
+            "schema": {
+              "$ref": "#/definitions/401"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "error": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        },
+        "status": {
+          "type": "number"
+        },
+        "extra": {
+          "type": "object"
+        }
+      }
+    },
+    "401": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+        "extra": {
+          "type": "object"
+        },
+        "errors": {
+          "$ref": "#/definitions/error"
+        }
+      }
+    },
+    "UserDTO": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "surname": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        },
+        "badge": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1522 @@
+[
+ {
+  "email": "adagostino@sysmanagement.it",
+  "surname": "D'Agostino",
+  "name": "Antonello",
+  "badge": "0000000000"
+ },
+ {
+  "email": "lgarofalo@sysmanagement.it",
+  "surname": "Garofalo",
+  "name": "Luca",
+  "badge": "0000000001"
+ },
+ {
+  "email": "srosa",
+  "surname": "Rosa",
+  "name": "Stefano",
+  "badge": "0000000002"
+ },
+ {
+  "email": "gafeltra@sysmanagement.it",
+  "surname": "Afeltra",
+  "name": "Giusy",
+  "badge": "0000000003"
+ },
+ {
+  "email": "ggenovesi@sysmanagement.it",
+  "surname": "Genovesi",
+  "name": "Guido",
+  "badge": "0000000004"
+ },
+ {
+  "email": "llongo@sysmanagement.it",
+  "surname": "Longo",
+  "name": "Luca",
+  "badge": "0000000005"
+ },
+ {
+  "email": "mguacci@sysmanagement.it",
+  "surname": "Guacci",
+  "name": "Massimiliano",
+  "badge": "0000000008"
+ },
+ {
+  "email": "pnocerino@sysmanagement.it",
+  "surname": "Nocerino",
+  "name": "Pasqualina",
+  "badge": "0000000009"
+ },
+ {
+  "email": "rmaglione@sysmanagement.it",
+  "surname": "Maglione",
+  "name": "Raffaele",
+  "badge": "0000000010"
+ },
+ {
+  "email": "scesarano@sysmanagement.it",
+  "surname": "Cesarano",
+  "name": "Salvatore",
+  "badge": "0000000011"
+ },
+ {
+  "email": "rpacilio@sysmanagement.it",
+  "surname": "Pacilio",
+  "name": "Roberto",
+  "badge": "0000000012"
+ },
+ {
+  "email": "ssoumeiri@sysmanagement.it",
+  "surname": "ZZZSoumeiri",
+  "name": "Siham",
+  "badge": "0000000013"
+ },
+ {
+  "email": "sferrandino@sysmanagement.it",
+  "surname": "Ferrandino",
+  "name": "Shari",
+  "badge": "0000000015"
+ },
+ {
+  "email": "acarbone@sysmanagement.it",
+  "surname": "Carbone",
+  "name": "Andrea",
+  "Matricola": "87",
+  "badge": "0000000016"
+ },
+ {
+  "email": "aferraioli@sysmanagement.it",
+  "surname": "Ferraioli",
+  "name": "Antonio",
+  "badge": "0000000019"
+ },
+ {
+  "email": "cpepe@sysmanagement.it",
+  "surname": "Pepe",
+  "name": "Christian",
+  "badge": "0000000022"
+ },
+ {
+  "email": "clatela@sysmanagement.it",
+  "surname": "Latela",
+  "name": "Ciro",
+  "Matricola": "81",
+  "badge": "0000000023"
+ },
+ {
+  "email": "cbarile@sysmanagement.it",
+  "surname": "Barile",
+  "name": "Cristina",
+  "badge": "0000000024"
+ },
+ {
+  "email": "dmaccariello@sysmanagement.it",
+  "surname": "Maccariello",
+  "name": "Danilo",
+  "badge": "0000000026"
+ },
+ {
+  "email": "dvello@sysmanagement.it",
+  "surname": "Vello",
+  "name": "Diego",
+  "Matricola": "125",
+  "badge": "0000000028"
+ },
+ {
+  "email": "dceccarelli@sysmanagement.it",
+  "surname": "Ceccarelli",
+  "name": "Domenico",
+  "Matricola": "128",
+  "badge": "0000000029"
+ },
+ {
+  "email": "ddalessandro@sysmanagement.it",
+  "surname": "D'Alessandro",
+  "name": "Domenico",
+  "badge": "0000000030"
+ },
+ {
+  "email": "escuotto@sysmanagement.it",
+  "surname": "Scuotto",
+  "name": "Enrico",
+  "badge": "0000000031"
+ },
+ {
+  "email": "fercolino@sysmanagement.it",
+  "surname": "Ercolino",
+  "name": "Fabio",
+  "Matricola": "36",
+  "badge": "0000000033"
+ },
+ {
+  "email": "fpanico@sysmanagement.it",
+  "surname": "Panico",
+  "name": "Francesco",
+  "badge": "0000000034"
+ },
+ {
+  "email": "gabrevetti@sysmanagement.it",
+  "surname": "Brevetti",
+  "name": "Antonio",
+  "badge": "0000000035"
+ },
+ {
+  "email": "imaric@sysmanagement.it",
+  "surname": "Maric",
+  "name": "Irena",
+  "badge": "0000000036"
+ },
+ {
+  "email": "ecacopardo@sysmanagement.it",
+  "surname": "Cacopardo",
+  "name": "Emanuele",
+  "badge": "0000000038"
+ },
+ {
+  "email": "lsantopaolo@sysmanagement.it",
+  "surname": "Santopaolo",
+  "name": "Luigi",
+  "badge": "0000000040"
+ },
+ {
+  "email": "gmandatori@sysmanagement.it",
+  "surname": "Mandatori",
+  "name": "Gennaro",
+  "badge": "0000000041"
+ },
+ {
+  "email": "gparibello@sysmanagement.it",
+  "surname": "Paribello",
+  "name": "Giuseppe",
+  "badge": "0000000042"
+ },
+ {
+  "email": "dminutella@sysmanagement.it",
+  "surname": "Minutella",
+  "name": "Daniele",
+  "badge": "0000000051"
+ },
+ {
+  "email": "fcornevilli@sysmanagement.it",
+  "surname": "Cornevilli",
+  "name": "Fabio",
+  "badge": "0000000053"
+ },
+ {
+  "email": "mesposito@sysmanagement.it",
+  "surname": "Esposito",
+  "name": "Massimo",
+  "badge": "0000000061"
+ },
+ {
+  "email": "ofilosa@sysmanagement.it",
+  "surname": "Filosa ",
+  "name": "Oreste",
+  "badge": "0000000064"
+ },
+ {
+  "email": "claddaga@sysmanagement.it",
+  "surname": "Laddaga",
+  "name": "Carmine",
+  "badge": "0000000072"
+ },
+ {
+  "email": "ldeangelis@sysmanagement.it",
+  "surname": "De Angelis",
+  "name": "Luca",
+  "badge": "0000000090"
+ },
+ {
+  "email": "rsolofria@sysmanagement.it",
+  "surname": "Solofria",
+  "name": "Raffaele",
+  "badge": "0000000093"
+ },
+ {
+  "email": "spepe@sysmanagement.it",
+  "surname": "Pepe",
+  "name": "Sonia Luciana",
+  "badge": "0000000101"
+ },
+ {
+  "email": "grubino@sysmanagement.it",
+  "surname": "Rubino ",
+  "name": "Gennaro",
+  "badge": "0000000102"
+ },
+ {
+  "email": "idelcovillo@sysmanagement.it",
+  "surname": "Del Covillo ",
+  "name": "Ivana",
+  "badge": "0000000103"
+ },
+ {
+  "email": "mtartaglia@sysmanagement.it",
+  "surname": "Tartaglia",
+  "name": "Monica",
+  "badge": "0000000104"
+ },
+ {
+  "email": "adellarocca@sysmanagement.it",
+  "surname": "Della Rocca",
+  "name": "Alessandro",
+  "badge": "0000000105"
+ },
+ {
+  "email": "gbianco@sysmanagement.it",
+  "surname": "Bianco",
+  "name": "Giacomo",
+  "badge": "0000000106"
+ },
+ {
+  "email": "pperozzino@sysmanagement.it",
+  "surname": "Perozzino",
+  "name": "Pasquale",
+  "badge": "0000000108"
+ },
+ {
+  "email": "mgragnaniello@sysmanagement.it",
+  "surname": "Gragnaniello",
+  "name": "Marco",
+  "badge": "0000000111"
+ },
+ {
+  "email": "gcaliano@sysmanagement.it",
+  "surname": "Caliano",
+  "name": "Giuseppe",
+  "badge": "0000000113"
+ },
+ {
+  "email": "gderobertis@sysmanagement.it",
+  "surname": "De Robertis",
+  "name": "Giuseppe",
+  "badge": "0000000114"
+ },
+ {
+  "email": "mmanzo@sysmanagement.it",
+  "surname": "Manzo",
+  "name": "Maurizio",
+  "badge": "0000000115"
+ },
+ {
+  "email": "sreppucci@sysmanagement.it",
+  "surname": "Reppucci",
+  "name": "Simone",
+  "badge": "0000000116"
+ },
+ {
+  "email": "adigennaro@sysmanagement.it",
+  "surname": "Di Gennaro",
+  "name": "Antonio",
+  "badge": "0000000118"
+ },
+ {
+  "email": "frossi@sysmanagement.it",
+  "surname": "Rossi",
+  "name": "Francesco",
+  "badge": "0000000119"
+ },
+ {
+  "email": "atorelli@sysmanagement.it",
+  "surname": "Torelli",
+  "name": "Alessio",
+  "badge": "0000000120"
+ },
+ {
+  "email": "amosca@sysmanagement.it",
+  "surname": "Mosca",
+  "name": "Annapia",
+  "badge": "0000000123"
+ },
+ {
+  "email": "fgargiulo@sysmanagement.it",
+  "surname": "Gargiulo",
+  "name": "Fabrizio",
+  "badge": "0000000124"
+ },
+ {
+  "email": "apomo@sysmanagement.it",
+  "surname": "Pomo",
+  "name": "Antonino",
+  "badge": "0000000126"
+ },
+ {
+  "email": "fdambra@sysmanagement.it",
+  "surname": "D'Ambra",
+  "name": "Felice",
+  "badge": "0000000127"
+ },
+ {
+  "email": "aamelio@sysmanagement.it",
+  "surname": "Amelio",
+  "name": "Antonio",
+  "badge": "0000000128"
+ },
+ {
+  "email": "fdiiorio@sysmanagement.it",
+  "surname": "Di Iorio",
+  "name": "Francesco",
+  "badge": "0000000129"
+ },
+ {
+  "email": "Nrietveld@sysmanagement.it",
+  "surname": "Rietveld",
+  "name": "Nina",
+  "badge": "0000000202"
+ },
+ {
+  "email": "rjcolacicco@sysmanagement.it",
+  "surname": "Colacicco",
+  "name": "Rocco Junior",
+  "badge": "0000000204"
+ },
+ {
+  "email": "dcocurullo@sysmanagement.it",
+  "surname": "Cocurullo",
+  "name": "Diego",
+  "badge": "0000000210"
+ },
+ {
+  "email": "amanzo@sysmanagement.it",
+  "surname": "Manzo",
+  "name": "Alessandro",
+  "badge": "0000000501"
+ },
+ {
+  "email": "dcasillo@sysmanagement.it",
+  "surname": "Casillo",
+  "name": "Danilo",
+  "badge": "0000000502"
+ },
+ {
+  "email": "viannaccone@sysmanagement.it",
+  "surname": "Iannaccone",
+  "name": "Valerio",
+  "badge": "0000000502"
+ },
+ {
+  "email": "gsantorelli@sysmanagement.it",
+  "surname": "Santorelli",
+  "name": "Giuliano",
+  "badge": "0000000503"
+ },
+ {
+  "email": "spiscitiello@sysmanagement.it",
+  "surname": "Piscitiello",
+  "name": "Salvatore",
+  "badge": "0000000504"
+ },
+ {
+  "email": "gmormile@sysmanagement.it",
+  "surname": "Mormile",
+  "name": "Gabriele",
+  "badge": "0000000505"
+ },
+ {
+  "email": "mrosamilia@sysmanagement.it",
+  "surname": "Rosamilia",
+  "name": "Massimo",
+  "badge": "0000000506"
+ },
+ {
+  "email": "clombardi@sysmanagement.it",
+  "surname": "Lombardi",
+  "name": "Cristiana",
+  "badge": "0000000507"
+ },
+ {
+  "email": "mgmarra@sysmanagement.it",
+  "surname": "Marra",
+  "name": "Maria Grazia",
+  "badge": "0000000511"
+ },
+ {
+  "email": "apragliola@sysmanagement.it",
+  "surname": "Pragliola",
+  "name": "Alessio",
+  "badge": "0000000512"
+ },
+ {
+  "email": "gvalentino@sysmanagement.it",
+  "surname": "ZZZValentino",
+  "name": "Giuseppe",
+  "badge": "0000000513"
+ },
+ {
+  "email": "lpuglia@sysmanagement.it",
+  "surname": "Puglia",
+  "name": "Luigi",
+  "badge": "0000000514"
+ },
+ {
+  "email": "rcorrado@sysmanagement.it",
+  "surname": "Corrado ",
+  "name": "Roberto",
+  "badge": "0000000516"
+ },
+ {
+  "email": "achiappetta@sysmanagement.it",
+  "surname": "Chiappetta",
+  "name": "Antonio",
+  "badge": "0000000517"
+ },
+ {
+  "email": "lamura@nm-2.com",
+  "surname": "La Mura",
+  "name": "Pasquale",
+  "badge": "0000000519"
+ },
+ {
+  "email": "sdefalco@sysmanagement.it",
+  "surname": "De Falco",
+  "name": "Stefano",
+  "badge": "0000000522"
+ },
+ {
+  "email": "fiossa@sysmanagement.it",
+  "surname": "Iossa",
+  "name": "Francesco",
+  "badge": "0000000524"
+ },
+ {
+  "email": "mauriemma@sysmanagement.it",
+  "surname": "Auriemma",
+  "name": "Marco",
+  "badge": "0000000524"
+ },
+ {
+  "email": "amarino@sysmanagement.it",
+  "surname": "Marino",
+  "name": "Alessandro",
+  "badge": "0000000531"
+ },
+ {
+  "email": "fschembri@sysmanagement.it",
+  "surname": "Schembri",
+  "name": "Francesco",
+  "badge": "0000000532"
+ },
+ {
+  "email": "vmiele@sysmanagement.it",
+  "surname": "Miele",
+  "name": "Valerio",
+  "badge": "0000000533"
+ },
+ {
+  "email": "acollaruvolo@sysmanagement.it",
+  "surname": "Collà Ruvolo",
+  "name": "Alberto",
+  "badge": "0000000534"
+ },
+ {
+  "email": "ldiluccio@sysmanagement.it",
+  "surname": "Di Luccio",
+  "name": "Luca",
+  "badge": "0000000535"
+ },
+ {
+  "email": "atroiano@sysmanagement.it",
+  "surname": "Troiano",
+  "name": "Alfredo",
+  "badge": "0000000536"
+ },
+ {
+  "email": "cmanfellotto@sysmanagement.it",
+  "surname": "Manfellotto",
+  "name": "Ciro",
+  "badge": "0000000537"
+ },
+ {
+  "email": "sgallo@sysmanagement.it",
+  "surname": "Gallo",
+  "name": "Savino",
+  "badge": "0000000538"
+ },
+ {
+  "email": "gdipalma@sysmanagement.it",
+  "surname": "Di Palma",
+  "name": "Giuseppe",
+  "badge": "0000000539"
+ },
+ {
+  "email": "criccio@sysmanagement.it",
+  "surname": "Riccio",
+  "name": "Castrese",
+  "badge": "0000000542"
+ },
+ {
+  "email": "fpgaglione@sysmanagement.it",
+  "surname": "Gaglione",
+  "name": "Francesco Pio (Gi Group)",
+  "badge": "0000000542"
+ },
+ {
+  "email": "csantonastaso@sysmanagement.it",
+  "surname": "Santonastaso",
+  "name": "Claudio",
+  "badge": "0000000543"
+ },
+ {
+  "email": "anunziata@sysmanagement.it",
+  "surname": "Nunziata",
+  "name": "Alfredo",
+  "badge": "0000000548"
+ },
+ {
+  "email": "gmungiguerra@sysmanagement.it",
+  "surname": "Mungiguerra",
+  "name": "Giuseppe",
+  "badge": "0000000549"
+ },
+ {
+  "email": "cmingione@sysmanagement.it",
+  "surname": "Mingione",
+  "name": "Ciro",
+  "badge": "0000000550"
+ },
+ {
+  "email": "mgugliotti@sysmanagement.it",
+  "surname": "Gugliotti",
+  "name": "Manuela",
+  "badge": "0000000553"
+ },
+ {
+  "email": "cannunziata@sysmanagement.it",
+  "surname": "Annunziata",
+  "name": "Carmine",
+  "badge": "0000000555"
+ },
+ {
+  "email": "msirleto@sysmanagement.it",
+  "surname": "Sirleto",
+  "name": "Mirko",
+  "badge": "0000000558"
+ },
+ {
+  "email": "apalmieri@sysmanagement.it",
+  "surname": "Palmieri",
+  "name": "Alberino",
+  "badge": "0000000559"
+ },
+ {
+  "email": "mrigione@sysmanagement.it",
+  "surname": "Rigione",
+  "name": "Maria",
+  "badge": "0000000560"
+ },
+ {
+  "email": "linversi@sysmanagement.it",
+  "surname": "Inversi",
+  "name": "Luigi",
+  "badge": "0000000561"
+ },
+ {
+  "email": "sschiavottiello@sysmanagement.it",
+  "surname": "Schiavottiello",
+  "name": "Salvatore",
+  "badge": "0000000562"
+ },
+ {
+  "email": "nmarmo@sysmanagement.it",
+  "surname": "Marmo",
+  "name": "Natasha",
+  "badge": "0000000564"
+ },
+ {
+  "email": "lrusso@sysmanagement.it",
+  "surname": "Russo",
+  "name": "Luigi",
+  "badge": "0000000565"
+ },
+ {
+  "email": "lgravina@sysmanagement.it",
+  "surname": "Gravina",
+  "name": "Lorenzo",
+  "badge": "0000000566"
+ },
+ {
+  "email": "rdepetris@sysmanagement.it",
+  "surname": "De Petris",
+  "name": "Riccardo",
+  "badge": "0000000567"
+ },
+ {
+  "email": "cboniello@sysmanagement.it",
+  "surname": "Boniello",
+  "name": "Carmine",
+  "badge": "0000000568"
+ },
+ {
+  "email": "galbano@sysmanagement.it",
+  "surname": "Albano",
+  "name": "Giuseppe",
+  "badge": "0000000569"
+ },
+ {
+  "email": "aviola@sysmanagement.it",
+  "surname": "Viola",
+  "name": "Antonio",
+  "badge": "0000000570"
+ },
+ {
+  "email": "cmuraglia@sysmanagement.it",
+  "surname": "Muraglia",
+  "name": "Ciro",
+  "badge": "0000000570"
+ },
+ {
+  "email": "aperna@sysmanagement.it",
+  "surname": "Perna",
+  "name": "Andrea",
+  "badge": "0000000571"
+ },
+ {
+  "email": "gsorrentino@sysmanagement.it",
+  "surname": "Sorrentino",
+  "name": "Gennaro",
+  "badge": "0000000600"
+ },
+ {
+  "email": "gfusco@sysmanagement.it",
+  "surname": "Fusco",
+  "name": "Giuseppe",
+  "badge": "0000000601"
+ },
+ {
+  "email": "ldesimone@sysmanagement.it",
+  "surname": "De Simone",
+  "name": "Luca",
+  "badge": "0000000602"
+ },
+ {
+  "email": "abencivenga@sysmanagement.it",
+  "surname": "Bencivenga",
+  "name": "Antonio",
+  "badge": "0000000603"
+ },
+ {
+  "email": "fdonofrio@sysmanagement.it",
+  "surname": "D'Onofrio",
+  "name": "Fabio",
+  "badge": "0000000605"
+ },
+ {
+  "email": "lpepe@sysmanagement.it",
+  "surname": "Pepe",
+  "name": "Luca",
+  "badge": "0000000606"
+ },
+ {
+  "email": "groscigno@sysmanagement.it",
+  "surname": "Roscigno",
+  "name": "Gianluca",
+  "badge": "0000000607"
+ },
+ {
+  "email": "amigliaccio@sysmanagement.it",
+  "surname": "Migliaccio",
+  "name": "Anna",
+  "badge": "0000000609"
+ },
+ {
+  "email": "srlemma@sysmanagement.it",
+  "surname": "Lemma",
+  "name": "Saverio Romano",
+  "badge": "0000000610"
+ },
+ {
+  "email": "gnocerino@sysmanagement.it",
+  "surname": "Nocerino ",
+  "name": "Giuseppe",
+  "badge": "0000000612"
+ },
+ {
+  "email": "nlandolfi@sysmanagement.it",
+  "surname": "Landolfi",
+  "name": "Nicola",
+  "badge": "0000000613"
+ },
+ {
+  "email": "odebari@sysmanagement.it",
+  "surname": "De Bari",
+  "name": "Onofrio",
+  "badge": "0000000614"
+ },
+ {
+  "email": "pvenere@sysmanagement.it",
+  "surname": "Venere ",
+  "name": "Piero",
+  "badge": "0000000615"
+ },
+ {
+  "email": "lceliento@sysmanagement.it",
+  "surname": "Celiento",
+  "name": "Luca",
+  "badge": "0000000616"
+ },
+ {
+  "email": "csorrentino@sysmanagement.it",
+  "surname": "Sorrentino",
+  "name": "Costantino",
+  "badge": "0000000617"
+ },
+ {
+  "email": "fcrimaldi@sysmanagement.it",
+  "surname": "Crimaldi",
+  "name": "Franco",
+  "badge": "0000000618"
+ },
+ {
+  "email": "gdeiorio@sysmanagement.it",
+  "surname": "De Iorio",
+  "name": "Giuseppe",
+  "badge": "0000000619"
+ },
+ {
+  "email": "cgaudiello@sysmanagement.it",
+  "surname": "Gaudiello",
+  "name": "Ciro",
+  "badge": "0000000621"
+ },
+ {
+  "email": "mcarrozzo@sysmanagement.it",
+  "surname": "Carrozzo",
+  "name": "Marco",
+  "badge": "0000000622"
+ },
+ {
+  "email": "siannelli@sysmanagement.it",
+  "surname": "Iannelli",
+  "name": "Stella",
+  "badge": "0000000624"
+ },
+ {
+  "email": "lbotteri@sysmanagement.it",
+  "surname": "Botteri",
+  "name": "Lucio",
+  "badge": "0000000626"
+ },
+ {
+  "email": "adecrescenzo@sysmanagement.it",
+  "surname": "De Crescenzo",
+  "name": "Alfonso",
+  "badge": "0000000630"
+ },
+ {
+  "email": "ftrotta@sysmanagement.it",
+  "surname": "Trotta",
+  "name": "Fabio",
+  "badge": "0000000631"
+ },
+ {
+  "email": "marnese@sysmanagement.it",
+  "surname": "Arnese ",
+  "name": "Marcello",
+  "badge": "0000000632"
+ },
+ {
+  "email": "mguercia@sysmanagement.it",
+  "surname": "Guercia",
+  "name": "Mariateresa",
+  "badge": "0000000633"
+ },
+ {
+  "email": "rferraro@sysmanagement.it",
+  "surname": "Ferraro",
+  "name": "Renato",
+  "badge": "0000000634"
+ },
+ {
+  "email": "ramato@sysmanagement.it",
+  "surname": "Amato",
+  "name": "Riccardo",
+  "badge": "0000000635"
+ },
+ {
+  "email": "rdimarco@sysmanagement.it",
+  "surname": "Di Marco",
+  "name": "Rinaldo",
+  "badge": "0000000636"
+ },
+ {
+  "email": "yfajouri@sysmanagement.it",
+  "surname": "Fajouri",
+  "name": "Yamil Emmanuel",
+  "badge": "0000000638"
+ },
+ {
+  "email": "rvergati@sysmanagement.it",
+  "surname": "Vergati",
+  "name": "Roberta",
+  "badge": "0000000645"
+ },
+ {
+  "email": "agugliotti@sysmanagement.it",
+  "surname": "Gugliotti",
+  "name": "Anna",
+  "badge": "0000000646"
+ },
+ {
+  "email": "vracca@sysmanagement.it",
+  "surname": "Racca",
+  "name": "Vincenzo",
+  "badge": "0000000647"
+ },
+ {
+  "email": "bsementini@sysmanagement.it",
+  "surname": "Sementini",
+  "name": "Bernardo",
+  "badge": "0000000649"
+ },
+ {
+  "email": "rpedata@sysmanagement.it",
+  "surname": "Pedata",
+  "name": "Romolo",
+  "badge": "0000000649"
+ },
+ {
+  "email": "abancone@sysmanagement.it",
+  "surname": "Bancone",
+  "name": "Amedeo",
+  "badge": "0000000650"
+ },
+ {
+  "email": "asettembre@sysmanagement.it",
+  "surname": "Settembre",
+  "name": "Angelo",
+  "badge": "0000000651"
+ },
+ {
+  "email": "mtufano@sysmanagement.it",
+  "surname": "Tufano",
+  "name": "Maria",
+  "badge": "0000000652"
+ },
+ {
+  "email": "abarruffo@sysmanagement.it",
+  "surname": "Barruffo",
+  "name": "Alessandro",
+  "badge": "0000000653"
+ },
+ {
+  "email": "vscarpati@sysmanagement.it",
+  "surname": "Scarpati",
+  "name": "Vincenzo Maria",
+  "badge": "0000000654"
+ },
+ {
+  "email": "rambrosio@sysmanagement.it",
+  "surname": "Ambrosio",
+  "name": "Raffaele",
+  "badge": "0000000655"
+ },
+ {
+  "email": "gsenese@sysmanagement.it",
+  "surname": "Senese",
+  "name": "Giuseppe",
+  "badge": "0000000656"
+ },
+ {
+  "email": "aspiezia@sysmanagement.it",
+  "surname": "Spiezia",
+  "name": "Andrea",
+  "badge": "0000000657"
+ },
+ {
+  "email": "pmoretti@sysmanagement.it",
+  "surname": "Moretti",
+  "name": "Pasquale",
+  "badge": "0000000658"
+ },
+ {
+  "email": "gcapozzi@sysmanagement.it",
+  "surname": "Capozzi",
+  "name": "Guido",
+  "badge": "0000000660"
+ },
+ {
+  "email": "acolantuono@sysmanagement.it",
+  "surname": "Colantuono",
+  "name": "AnnaMaria",
+  "badge": "0000000661"
+ },
+ {
+  "email": "iesposito@sysmanagement.it",
+  "surname": "Esposito",
+  "name": "Ilaria",
+  "badge": "0000000662"
+ },
+ {
+  "email": "emostrato@sysmanagement.it",
+  "surname": "Mostrato",
+  "name": "Emanuela",
+  "badge": "0000000663"
+ },
+ {
+  "email": "emonaco@sysmanagement.it",
+  "surname": "Monaco",
+  "name": "Emanuele",
+  "badge": "0000000664"
+ },
+ {
+  "email": "dpilato@sysmanagement.it",
+  "surname": "Pilato",
+  "name": "Daniela",
+  "badge": "0000000670"
+ },
+ {
+  "email": "gdesimone@sysmanagement.it",
+  "surname": "De Simone ",
+  "name": "Gianluca",
+  "badge": "0000000671"
+ },
+ {
+  "email": "cderosa@sysmanagement.it",
+  "surname": "De Rosa",
+  "name": "Ciro",
+  "badge": "0000000672"
+ },
+ {
+  "email": "rascione@sysmanagement.it",
+  "surname": "Ascione",
+  "name": "Raffaele",
+  "badge": "0000000673"
+ },
+ {
+  "email": "tsuppa@sysmanagement.it",
+  "surname": "Suppa",
+  "name": "Teresa",
+  "badge": "0000000674"
+ },
+ {
+  "email": "scastagna@sysmanagement.it",
+  "surname": "Castagna",
+  "name": "Salvatore",
+  "badge": "0000000675"
+ },
+ {
+  "email": "mbotti@sysmanagement.it",
+  "surname": "Botti",
+  "name": "Michele",
+  "badge": "0000000676"
+ },
+ {
+  "email": "fnigro@sysmanagement.it",
+  "surname": "Nigro",
+  "name": "Feliciano",
+  "badge": "0000000677"
+ },
+ {
+  "email": "rlieto@sysmanagement.it",
+  "surname": "Lieto",
+  "name": "Raffaele",
+  "badge": "0000000678"
+ },
+ {
+  "email": "siuliucci@sysmanagement.it",
+  "surname": "Iuliucci",
+  "name": "Sara",
+  "badge": "0000000680"
+ },
+ {
+  "email": "fspagocci@sysmanagement.it",
+  "surname": "Spagocci",
+  "name": "Federico",
+  "badge": "0000000681"
+ },
+ {
+  "email": "vpuzone@sysmanagement.it",
+  "surname": "Puzone",
+  "name": "Valeria",
+  "badge": "0000000682"
+ },
+ {
+  "email": "cdaloia@sysmanagement.it",
+  "surname": "D Aloia",
+  "name": "Carlo",
+  "badge": "0000000683"
+ },
+ {
+  "email": "rpirone@sysmanagement.it",
+  "surname": "Pirone",
+  "name": "Raffaele",
+  "badge": "0000000684"
+ },
+ {
+  "email": "mlastra@sysmanagement.it",
+  "surname": "Lastra",
+  "name": "Marco",
+  "badge": "0000000685"
+ },
+ {
+  "email": "acapuano@sysmanagement.it",
+  "surname": "Capuano",
+  "name": "Antonio",
+  "badge": "0000000686"
+ },
+ {
+  "email": "glsorrentino@sysmanagement.it",
+  "surname": "Sorrentino",
+  "name": "Gianluca",
+  "badge": "0000000687"
+ },
+ {
+  "email": "gtizzano@sysmanagement.it",
+  "surname": "Tizzano",
+  "name": "Gennaro",
+  "badge": "0000000688"
+ },
+ {
+  "email": "mpalumbo@sysmanagement.it",
+  "surname": "Palumbo",
+  "name": "Michele",
+  "badge": "0000000689"
+ },
+ {
+  "email": "fdimare@sysmanagement.it",
+  "surname": "Di Mare",
+  "name": "Francesca",
+  "badge": "0000000690"
+ },
+ {
+  "email": "mriccardi@sysmanagement.it",
+  "surname": "Riccardi",
+  "name": "Michele",
+  "badge": "0000000691"
+ },
+ {
+  "email": "bruggiero@sysmanagement.it",
+  "surname": "Ruggiero",
+  "name": "Bianca",
+  "badge": "0000000692"
+ },
+ {
+  "email": "manzalone@sysmanagement.it",
+  "surname": "Anzalone",
+  "name": "Morena",
+  "badge": "0000000693"
+ },
+ {
+  "email": "agrillo@sysmanagement.it",
+  "surname": "Grillo",
+  "name": "Abele",
+  "badge": "0000000694"
+ },
+ {
+  "email": "ppomato@sysmanagement.it",
+  "surname": "Pomato",
+  "name": "Paolo",
+  "badge": "0000000695"
+ },
+ {
+  "email": "mdinapoli@sysmanagement.it",
+  "surname": "Di Napoli",
+  "name": "Massimo",
+  "badge": "0000000696"
+ },
+ {
+  "email": "dtundo@sysmanagement.it",
+  "surname": "Tundo",
+  "name": "Davide",
+  "badge": "0000000701"
+ },
+ {
+  "email": "mquattromani@sysmanagement.it",
+  "surname": "Quattromani",
+  "name": "Maurizio",
+  "badge": "0000000703"
+ },
+ {
+  "email": "anardullo@sysmanagement.it",
+  "surname": "Nardullo",
+  "name": "Angelo",
+  "badge": "0000000704"
+ },
+ {
+  "email": "svitti@sysmanagement.it",
+  "surname": "Vitti",
+  "name": "Stefano",
+  "badge": "0000000705"
+ },
+ {
+  "email": "fvaudano@sysmanagement.it",
+  "surname": "Vaudano",
+  "name": "Flavio",
+  "badge": "0000000706"
+ },
+ {
+  "email": "lgianfreda@sysmanagement.it",
+  "surname": "Gianfreda",
+  "name": "Luca",
+  "badge": "0000000707"
+ },
+ {
+  "email": "amagri@sysmanagement.it",
+  "surname": "Magri",
+  "name": "Andrea",
+  "badge": "0000000711"
+ },
+ {
+  "email": "acorsuto@sysmanagement.it",
+  "surname": "Corsuto",
+  "name": "Antonio",
+  "badge": "0000000712"
+ },
+ {
+  "email": "ftito@sysmanagement.it",
+  "surname": "Tito",
+  "name": "Francesco",
+  "badge": "0000000712"
+ },
+ {
+  "email": "abranchetti@sysmanagement.it",
+  "surname": "Branchetti",
+  "name": "Alessandro",
+  "badge": "0000000715"
+ },
+ {
+  "email": "smanna@sysmanagement.it",
+  "surname": "Manna",
+  "name": "Salvatore",
+  "badge": "0000000720"
+ },
+ {
+  "email": "lscherillo@sysmanagement.it",
+  "surname": "Scherillo",
+  "name": "Luigi",
+  "badge": "0000000722"
+ },
+ {
+  "email": "cnesta@sysmanagement.it",
+  "surname": "Nesta",
+  "name": "Carlo",
+  "badge": "0000000723"
+ },
+ {
+  "email": "frusso@sysmanagement.it",
+  "surname": "Russo",
+  "name": "Felice",
+  "badge": "0000000730"
+ },
+ {
+  "email": "mpiccoli@sysmanagement.it",
+  "surname": "Piccoli",
+  "name": "Maurizio",
+  "badge": "0000000735"
+ },
+ {
+  "email": "mmarella@sysmanagement.it",
+  "surname": "Marella",
+  "name": "Massimiliano Manuel",
+  "badge": "0000000750"
+ },
+ {
+  "email": "Marnese",
+  "surname": "Arnese",
+  "name": "Marcello",
+  "badge": "0000000777"
+ },
+ {
+  "email": "mmaddaluno@sysmanagement.it",
+  "surname": "Maddaluno",
+  "name": "Massimo",
+  "badge": "0000000811"
+ },
+ {
+  "email": "tenace@nm-2.com",
+  "surname": "Tenace",
+  "name": "Massimiliano",
+  "badge": "0000000900"
+ },
+ {
+  "email": "pastena@nm-2.com",
+  "surname": "Pastena",
+  "name": "Antonello",
+  "badge": "0000000901"
+ },
+ {
+  "email": "pmacaluso@sysmanagement.it",
+  "surname": "Macaluso",
+  "name": "Piero",
+  "badge": "0000000902"
+ },
+ {
+  "email": "dedonato@nm-2.com",
+  "surname": "De Donato",
+  "name": "Walter",
+  "badge": "0000000905"
+ },
+ {
+  "email": "gmele@sysmanagement.it",
+  "surname": "Mele",
+  "name": "Giuseppe",
+  "badge": "0000000911"
+ },
+ {
+  "email": "mredepaolini@sysmanagement.it",
+  "surname": "Redepaolini",
+  "name": "Matteo",
+  "badge": "0000000932"
+ },
+ {
+  "email": "gtramontana@sysmanagement.it",
+  "surname": "Tramontana",
+  "name": "Giuseppe",
+  "badge": "0000000991"
+ },
+ {
+  "email": "lsvanzo@sysmanagement.it",
+  "surname": "Vanzo",
+  "name": "Luca Samuele",
+  "badge": "0000000992"
+ },
+ {
+  "email": "glonardo@sysmanagement.it",
+  "surname": "Lonardo",
+  "name": "Gioacchino",
+  "badge": "0000000993"
+ },
+ {
+  "email": "abuonanno@sysmanagement.it",
+  "surname": "Buonanno",
+  "name": "Antimo",
+  "badge": "0000000994"
+ },
+ {
+  "email": "mdelgiudice@sysmanagement.it",
+  "surname": "Del Giudice",
+  "name": "Marco",
+  "badge": "0000000995"
+ },
+ {
+  "email": "amanca@sysmanagement.it",
+  "surname": "Manca",
+  "name": "Alessandro",
+  "badge": "0000000996"
+ },
+ {
+  "email": "glarocca@sysmanagement.it",
+  "surname": "Larocca",
+  "name": "Giuseppe",
+  "badge": "0000000998"
+ },
+ {
+  "email": "pmacaluso",
+  "surname": "Macaluso",
+  "name": "Piero",
+  "badge": "0000000998"
+ },
+ {
+  "email": "mauro.garofalo@mindmercatis.com",
+  "surname": "Garofalo",
+  "name": "Mauro (NM2)",
+  "badge": "0000000999"
+ },
+ {
+  "email": "mvolpe@sysmanagement.it",
+  "surname": "Volpe",
+  "name": "Michele",
+  "badge": "0000002094"
+ },
+ {
+  "email": "pguarino@sysmanagement.it",
+  "surname": "Guarino",
+  "name": "Pasquale",
+  "badge": "0000002096"
+ },
+ {
+  "email": "fmarano@sysmanagement.it",
+  "surname": "Marano",
+  "name": "Fabio",
+  "badge": "0000002098"
+ },
+ {
+  "email": "nsavarese@sysmanagement.it",
+  "surname": "Savarese",
+  "name": "Nadia",
+  "badge": "0000003333"
+ },
+ {
+  "email": "cshisa@sysmanagement.it",
+  "surname": " Di Mare ",
+  "name": "Francesca",
+  "badge": "0000003542"
+ },
+ {
+  "email": "enrico.capozzo@soprasteria.com",
+  "surname": "Capozzo",
+  "name": "Enrico",
+  "badge": "0000003658"
+ },
+ {
+  "email": "Pmauriemma",
+  "surname": "Auriemma",
+  "name": "Pasquale Marco",
+  "badge": "0000007777"
+ },
+ {
+  "email": "vslao@sysmanagement.it",
+  "surname": "SLAO",
+  "name": "Vincenzo",
+  "badge": "0000009123"
+ },
+ {
+  "email": "mbernini@sysmanagement.it",
+  "surname": "Bernini",
+  "name": "Marco",
+  "Matricola": "116",
+  "badge": "0000009898"
+ },
+ {
+  "email": "cschisa@sysmanagement.it",
+  "surname": "Schisa",
+  "name": "Carlo",
+  "badge": "0000009991"
+ },
+ {
+  "email": "mderosa@sysmanagement.it",
+  "surname": "De Rosa",
+  "name": "Marco",
+  "badge": "0000009999"
+ },
+ {
+  "email": "aedesanto@sysmanagement.it",
+  "surname": "De Santo",
+  "name": "Andrea Edoardo",
+  "badge": "0000099991"
+ },
+ {
+  "email": "davide.frigerio@mindmercatis.com",
+  "surname": "Frigerio",
+  "name": "Davide",
+  "badge": "0000099991"
+ },
+ {
+  "email": "arusso@sysmanagement.it",
+  "surname": "Russo",
+  "name": "Antonio",
+  "badge": "0000099992"
+ },
+ {
+  "email": "liavarone@sysmanagement.it",
+  "surname": "Iavarone",
+  "name": "Loredana",
+  "badge": "0000099994"
+ },
+ {
+  "email": "simone.avogadro@mindmercatis.com",
+  "surname": "Avogadro",
+  "name": "Simone",
+  "badge": "0000676876"
+ },
+ {
+  "email": "raiello@sysmanagement.it",
+  "surname": "Aiello",
+  "name": "Raffaele",
+  "badge": "0000929292"
+ },
+ {
+  "email": "giovanni.ferrari@mindmercatis.com",
+  "surname": "Ferrari",
+  "name": "Giovanni",
+  "badge": "0000999992"
+ },
+ {
+  "email": "gbuglione@sysmanagement.it",
+  "surname": "Buglione",
+  "name": "Giuseppe",
+  "badge": "0001111111"
+ },
+ {
+  "email": "federico.dalcastello@mindmercatis.com",
+  "surname": "Dal Castello",
+  "name": "Federico",
+  "badge": "0009999993"
+ },
+ {
+  "email": "aborrelli@sysmanagement.it",
+  "surname": "Borrelli",
+  "name": "Antonio",
+  "badge": "0906806904"
+ },
+ {
+  "email": "glieto@sysmanagement.it",
+  "surname": "Lieto",
+  "name": "Giuseppe",
+  "badge": "1000000001"
+ },
+ {
+  "email": "vanzalone@sysmanagement.it",
+  "surname": "Anzalone",
+  "name": "Valerio (Tirocinante)",
+  "badge": "1111111111"
+ },
+ {
+  "email": "fvettosi@sysmanagement.it",
+  "surname": "Vettosi",
+  "name": "Francesco",
+  "badge": "122"
+ },
+ {
+  "email": "gsantagata@sysmanagement.it",
+  "surname": "Santagata",
+  "name": "Giuliano",
+  "badge": "2222222222"
+ },
+ {
+  "email": "lallard@sysmanagement.it",
+  "surname": "Allard",
+  "name": "Lorenzo",
+  "badge": "3353453345"
+ },
+ {
+  "email": "ggerardi@sysmanagement.it",
+  "surname": "Gerardi",
+  "name": "Giuliano",
+  "badge": "4546445687"
+ },
+ {
+  "email": "lpietroluongo@sysmanagement.it",
+  "surname": " Pietroluongo",
+  "name": "Luigi",
+  "badge": "9038409324"
+ },
+ {
+  "email": "dursoleo@sysmanagement.it",
+  "surname": "Ursoleo",
+  "name": "Domenico",
+  "badge": "9111111111"
+ },
+ {
+  "email": "adesanto@sysmanagement.it",
+  "surname": "De Santo ",
+  "name": "Andrea Edorado",
+  "badge": "9999000999"
+ },
+ {
+  "email": "amartines@sysmanagement.it",
+  "surname": "Martines",
+  "name": "Antonio",
+  "badge": "9999111111"
+ },
+ {
+  "email": "asidoti@sysmanagement.it",
+  "surname": "Sidoti",
+  "name": "Alessandro",
+  "badge": "9999999998"
+ },
+ {
+  "email": "csannino@sysmanagement.it",
+  "surname": "Sannino",
+  "name": "Carmela",
+  "Matricola": "58",
+  "badge": "9999999999"
+ },
+ {
+  "email": "dmazzola@sysmanagement.it",
+  "surname": "Mazzola",
+  "name": "Davide",
+  "Matricola": "112",
+  "badge": null
+ }
+]
