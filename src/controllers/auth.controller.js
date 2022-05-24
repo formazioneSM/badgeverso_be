@@ -26,7 +26,7 @@ exports.register = async (req, res, next) => {
 exports.login = async (req, res, next) => {
   try {
     const user = await User.findAndGenerateToken(req.body)
-    const payload = {sub: user.id}
+    const payload = {sub: user.id, amin:user.admin ? true : false}
     const token = jwt.sign(payload, config.secret)
     return res.json({ message: 'OK', token: token })
   } catch (error) {
