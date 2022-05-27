@@ -234,9 +234,58 @@
         ],
         "responses": {
           "200": {
-            "description": "utente modificato",
+            "description": "post modificato",
             "schema": {
-              "$ref": "#/definitions/UserDTO"
+              "$ref": "#/definitions/BachecaDTO"
+            }
+          },
+          "401": {
+            "description": "Not Authorized",
+            "schema": {
+              "$ref": "#/definitions/401"
+            }
+          }
+        },
+        "security": [
+          {
+            "sm_auth": [
+              "write:users"
+            ]
+          }
+        ]
+      },
+      "get": {
+        "tags": [
+          "Bacheca"
+        ],
+        "summary": "recupera un post ricercandolo attraverso il suo id",
+        "description": "",
+        "operationId": "readBachecaById",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Authorization",
+            "description": "Authorization",
+            "required": true
+          },
+          {
+            "in": "params",
+            "name": "id",
+            "description": "id post",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "dettaglio post",
+            "schema": {
+              "$ref": "#/definitions/BachecaDTO"
             }
           },
           "401": {

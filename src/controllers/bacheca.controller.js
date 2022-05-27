@@ -12,6 +12,15 @@ exports.findAll = async (req, res, next) => {
     next(error)
   }
 }
+exports.findOne = async (req, res, next) => {
+  try {
+    const results = await Bacheca.findById(req.params.id)
+    if(results.length === 0) return res.status(200).json([])
+    res.send(results);
+  } catch (error) {
+    next(error)
+  }
+}
 exports.edit = async (req, res, next) => {
   try {
     await Bacheca.checkUpdatePayload(req.body);
