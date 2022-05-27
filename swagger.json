@@ -20,6 +20,14 @@
     {
       "name": "Users",
       "description": "API dipendenti system"
+    },
+    {
+      "name": "Bacheca",
+      "description": "API posts system"
+    },
+    {
+      "name": "Auth",
+      "description": "API auth system"
     }
   ],
   "schemes": [
@@ -32,7 +40,7 @@
     "application/json"
   ],
   "paths": {
-    "/auth/:badge": {
+    "/users/:badge": {
       "get": {
         "tags": [
           "Users"
@@ -190,10 +198,161 @@
         ]
       }
     },
+    "/bacheca/:id": {
+      "put": {
+        "tags": [
+          "Bacheca"
+        ],
+        "summary": "modifica un post ricercandolo attraverso il suo id",
+        "description": "",
+        "operationId": "editBacheca",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Authorization",
+            "description": "Authorization",
+            "required": true
+          },
+          {
+            "in": "params",
+            "name": "id",
+            "description": "id post",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "bacheca",
+            "description": "Numero badge",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "utente modificato",
+            "schema": {
+              "$ref": "#/definitions/UserDTO"
+            }
+          },
+          "401": {
+            "description": "Not Authorized",
+            "schema": {
+              "$ref": "#/definitions/401"
+            }
+          }
+        },
+        "security": [
+          {
+            "sm_auth": [
+              "write:users"
+            ]
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Bacheca"
+        ],
+        "summary": "elimina un post ricercandolo attraverso il suo id",
+        "description": "",
+        "operationId": "deleteBacheca",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Authorization",
+            "description": "Authorization",
+            "required": true
+          },
+          {
+            "in": "params",
+            "name": "id",
+            "description": "id post",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "post eliminato",
+            "schema": {
+              "$ref": "#/definitions/BachecaDTO"
+            }
+          },
+          "401": {
+            "description": "Not Authorized",
+            "schema": {
+              "$ref": "#/definitions/401"
+            }
+          }
+        },
+        "security": [
+          {
+            "sm_auth": [
+              "write:bacheca"
+            ]
+          }
+        ]
+      }
+    },
+    "/bacheca/all": {
+      "get": {
+        "tags": [
+          "Bacheca"
+        ],
+        "summary": "recupera tutti i post disponibili",
+        "description": "",
+        "operationId": "getBacheca",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Authorization",
+            "description": "Authorization",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "lista dei posts",
+            "schema": {
+              "$ref": "#/definitions/BachecaDTO"
+            }
+          },
+          "401": {
+            "description": "Not Authorized",
+            "schema": {
+              "$ref": "#/definitions/401"
+            }
+          }
+        },
+        "security": [
+          {
+            "sm_auth": [
+              "read:bacheca"
+            ]
+          }
+        ]
+      }
+    },
     "/auth/checkToken": {
       "get": {
         "tags": [
-          "Users"
+          "Auth"
         ],
         "summary": "verifica la validità del tuo token",
         "description": "",
@@ -243,7 +402,7 @@
     "/auth/register": {
       "post": {
         "tags": [
-          "Users"
+          "Auth"
         ],
         "summary": "registra un nuovo dipendente",
         "description": "",
@@ -285,7 +444,7 @@
     "/auth/login": {
       "post": {
         "tags": [
-          "Users"
+          "Auth"
         ],
         "summary": "login",
         "description": "",
@@ -342,9 +501,9 @@
     "/auth/forgotPassword/:id": {
       "put": {
         "tags": [
-          "Users"
+          "Auth"
         ],
-        "summary": "login",
+        "summary": "password dimenticata",
         "description": "",
         "operationId": "forgotPassword",
         "consumes": [
@@ -438,6 +597,20 @@
           "type": "string"
         },
         "badge": {
+          "type": "string"
+        }
+      }
+    },
+    "BachecaDTO": {
+      "type": "object",
+      "properties": {
+        "color": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "from": {
           "type": "string"
         }
       }
