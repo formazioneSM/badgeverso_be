@@ -463,6 +463,271 @@
         ]
       }
     },
+    "/convenzione/:id": {
+      "put": {
+        "tags": [
+          "Convenzione"
+        ],
+        "summary": "modifica una convenzione ricercandola attraverso il suo id",
+        "description": "",
+        "operationId": "editConvenzione",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Authorization",
+            "description": "Authorization",
+            "required": true
+          },
+          {
+            "in": "params",
+            "name": "id",
+            "description": "id post",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "convenzione",
+            "description": "una qualisasi delle property dell'oggetto Convenzione",
+            "type": "object",
+            "schema": {
+              "$ref": "#/definitions/ConvenzioneDTO"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "convenzione modificata",
+            "schema": {
+              "$ref": "#/definitions/ConvenzioneDTO"
+            }
+          },
+          "401": {
+            "description": "Not Authorized",
+            "schema": {
+              "$ref": "#/definitions/401"
+            }
+          }
+        },
+        "security": [
+          {
+            "sm_auth": [
+              "write:convenzione"
+            ]
+          }
+        ]
+      },
+      "get": {
+        "tags": [
+          "Convenzione"
+        ],
+        "summary": "recupera una convenzione ricercandola attraverso il suo id",
+        "description": "",
+        "operationId": "readConvenzioneById",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Authorization",
+            "description": "Authorization",
+            "required": true
+          },
+          {
+            "in": "params",
+            "name": "id",
+            "description": "id convenzione",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "dettaglio convenzione",
+            "schema": {
+              "$ref": "#/definitions/ConvenzioneDTO"
+            }
+          },
+          "401": {
+            "description": "Not Authorized",
+            "schema": {
+              "$ref": "#/definitions/401"
+            }
+          }
+        },
+        "security": [
+          {
+            "sm_auth": [
+              "write:users"
+            ]
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Convenzione"
+        ],
+        "summary": "elimina una convenzione ricercandola attraverso il suo id",
+        "description": "",
+        "operationId": "deleteConvenzione",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Authorization",
+            "description": "Authorization",
+            "required": true
+          },
+          {
+            "in": "params",
+            "name": "id",
+            "description": "id convenzione",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "convenzione eliminata",
+            "schema": {
+              "$ref": "#/definitions/ConvenzioneDTO"
+            }
+          },
+          "401": {
+            "description": "Not Authorized",
+            "schema": {
+              "$ref": "#/definitions/401"
+            }
+          }
+        },
+        "security": [
+          {
+            "sm_auth": [
+              "delete:convenzione"
+            ]
+          }
+        ]
+      }
+    },
+    "/convenzione/all": {
+      "get": {
+        "tags": [
+          "Convenzione"
+        ],
+        "summary": "recupera tutte le convenzioni disponibili",
+        "description": "",
+        "operationId": "getConvenzioni",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Authorization",
+            "description": "Authorization",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "lista delle convenzioni",
+            "schema": {
+              "$ref": "#/definitions/ConvenzioneDTO"
+            }
+          },
+          "401": {
+            "description": "Not Authorized",
+            "schema": {
+              "$ref": "#/definitions/401"
+            }
+          }
+        },
+        "security": [
+          {
+            "sm_auth": [
+              "read:bacheca"
+            ]
+          }
+        ]
+      }
+    },
+    "/convenzione": {
+      "post": {
+        "tags": [
+          "Convenzione"
+        ],
+        "summary": "crea una nuova convenzione",
+        "description": "",
+        "operationId": "createConvenzione",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Authorization",
+            "description": "Authorization",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Convenzione",
+            "description": "nuovo oggetto di tipo convenzione",
+            "type": "object",
+            "schema": {
+              "$ref": "#/definitions/ConvenzioneDTO"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "post convenzione creato",
+            "schema": {
+              "$ref": "#/definitions/ConvenzioneDTO"
+            }
+          },
+          "401": {
+            "description": "Not Authorized",
+            "schema": {
+              "$ref": "#/definitions/401"
+            }
+          },
+          "400": {
+            "description":"Bad request",
+            "schema": {
+              "$ref": "#/definitions/error"
+            }
+          }
+        },
+        "security": [
+          {
+            "sm_auth": [
+              "write:convenzione"
+            ]
+          }
+        ]
+      }
+    },
     "/auth/checkToken": {
       "get": {
         "tags": [
@@ -612,7 +877,7 @@
         }
       }
     },
-    "/auth/forgotPassword/:id": {
+    "/auth/forgotPassword/:email": {
       "put": {
         "tags": [
           "Auth"
@@ -629,15 +894,9 @@
         "parameters": [
           {
             "in": "params",
-            "name": "id",
+            "name": "email",
             "type": "string",
-            "description": "id utente",
-            "required": true
-          },
-          {
-            "in": "header",
-            "name": "Authorization",
-            "description": "Authorization",
+            "description": "email utente",
             "required": true
           }
         ],
@@ -725,6 +984,20 @@
           "type": "string"
         },
         "from": {
+          "type": "string"
+        }
+      }
+    },
+    "ConvenzioneDTO": {
+      "type": "object",
+      "properties": {
+        "titolo": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "link": {
           "type": "string"
         }
       }

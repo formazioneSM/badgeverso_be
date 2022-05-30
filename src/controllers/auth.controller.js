@@ -31,7 +31,8 @@ exports.login = async (req, res, next) => {
       admin:user.role === 'admin', 
       id: user._id, 
       name: user.name, 
-      surname: user.surname
+      surname: user.surname,
+      email: user.email
     }
     const token = jwt.sign(payload, config.secret)
     return res.json({ message: 'OK', token: token })
@@ -82,7 +83,7 @@ exports.confirm = async (req, res, next) => {
 exports.forgotPassword = async (req, res, next) => {
   try {
     const passwordChangeKey = uuidv1.v1();
-   const user = await User.findByIdAndUpdate(req.params.id, {$set:{ passwordChangeKey: passwordChangeKey}},{new:true});
+   const user = await User.findOneAndUpdate({'email':req.params.email}, {$set:{ passwordChangeKey: passwordChangeKey}},{new:true});
     
     const mailOptions = {
       from: 'noreply',
