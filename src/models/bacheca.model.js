@@ -1,6 +1,8 @@
 'use strict'
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
+const mongoose = require('mongoose');
+const httpStatus = require('http-status');
+const Schema = mongoose.Schema;
+const APIError = require('../utils/APIError');
 const fields = ['color', 'text', 'from']
 const bachecaSchema = new Schema({
   color: {

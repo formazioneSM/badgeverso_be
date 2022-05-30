@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "version": "1.0.0",
-    "title": "SM Be",
+    "title": "Badgeverso Be",
     "description": "System management s.p.a",
     "license": {
       "name": "MIT",
@@ -228,7 +228,11 @@
           {
             "in": "body",
             "name": "bacheca",
-            "description": "Numero badge",
+            "description": "una qualisasi delle property dell'oggetto Bacheca",
+            "type": "object",
+            "schema": {
+              "$ref": "#/definitions/BachecaDTO"
+            },
             "required": true
           }
         ],
@@ -393,6 +397,67 @@
           {
             "sm_auth": [
               "read:bacheca"
+            ]
+          }
+        ]
+      }
+    },
+    "/bacheca": {
+      "post": {
+        "tags": [
+          "Bacheca"
+        ],
+        "summary": "crea una nuovo post bacheca",
+        "description": "",
+        "operationId": "createBacheca",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Authorization",
+            "description": "Authorization",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Bacheca",
+            "description": "nuovo oggetto di tipo bacheca",
+            "type": "object",
+            "schema": {
+              "$ref": "#/definitions/BachecaDTO"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "post bacheca creato",
+            "schema": {
+              "$ref": "#/definitions/BachecaDTO"
+            }
+          },
+          "401": {
+            "description": "Not Authorized",
+            "schema": {
+              "$ref": "#/definitions/401"
+            }
+          },
+          "400": {
+            "description":"Bad request",
+            "schema": {
+              "$ref": "#/definitions/error"
+            }
+          }
+        },
+        "security": [
+          {
+            "sm_auth": [
+              "write:bacheca"
             ]
           }
         ]
