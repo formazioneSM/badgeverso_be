@@ -3,9 +3,9 @@ const mongoose = require('mongoose');
 const httpStatus = require('http-status');
 const Schema = mongoose.Schema;
 const APIError = require('../utils/APIError');
-const fields = ['titolo', 'text', 'link']
+const fields = ['titoloLink', 'text', 'url', 'titolo']
 const convenzioneSchema = new Schema({
-  titolo: {
+  titoloLink: {
     type: String,
     required: true,
     lowercase: true
@@ -15,9 +15,13 @@ const convenzioneSchema = new Schema({
     required: true,
     minlength: 4
   },
-  link: {
+  url: {
     type: String,
-    required: false
+    required: true
+  },
+  titolo: {
+    type: String,
+    required: true
   }
 })
 convenzioneSchema.statics = {

@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+  <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
 <body>
-<form id="formChangePass">
-  <input type="password" minlength="4" required id="password">
-  <input type="password" minlength="4" required id="confirmPassword">
-  <button type="submit" id="buttonChangePassword">Cambia password</button>
-</form>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script  src="/static/scripts.js"></script> 
+  <form id="formChangePass">
+    <div id="containerImages">
+      <img id="logo" src="/static/assets/Badgeverso.png" alt="">
+      <img id="puntino" src="/static/assets/puntino.png" alt="">
+    </div>
+    <input type="password" placeholder="nuova password" minlength="4" required id="password">
+    <input type="password" placeholder="conferma password" minlength="4" required id="confirmPassword">
+    <button type="submit" id="buttonChangePassword">Cambia password</button>
+  </form>
+  <div id="backdrop">
+    <div id="containerLogo">
+      <?xml version="1.0" encoding="UTF-8"?>
+      <svg width="51px" height="31px" viewBox="0 0 51 31" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <title>Components/Brand/Pittogramma</title>
+        <g id="Components/Brand/Pittogramma" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <path
+            d="M25.3779,10.151 C28.1809,10.151 30.4529,12.424 30.4529,15.227 C30.4529,18.03 28.1809,20.302 25.3779,20.302 C22.5749,20.302 20.3029,22.574 20.3029,25.378 C20.3029,28.181 18.0299,30.453 15.2269,30.453 C12.4239,30.453 10.1509,28.181 10.1509,25.378 C10.1509,22.574 12.4239,20.302 15.2269,20.302 C18.0299,20.302 20.3029,18.03 20.3029,15.227 C20.3029,12.424 22.5749,10.151 25.3779,10.151 Z M35.5297,-2.13162821e-14 C38.3317,-2.13162821e-14 40.6047,2.272 40.6047,5.075 C40.6047,7.879 42.8767,10.151 45.6797,10.151 C48.4837,10.151 50.7557,12.424 50.7557,15.227 C50.7557,18.03 48.4837,20.302 45.6797,20.302 C42.8767,20.302 40.6047,22.574 40.6047,25.378 C40.6047,28.181 38.3317,30.453 35.5297,30.453 C32.7257,30.453 30.4527,28.181 30.4527,25.378 C30.4527,22.574 32.7257,20.302 35.5297,20.302 C38.3317,20.302 40.6047,18.03 40.6047,15.227 C40.6047,12.424 38.3317,10.151 35.5297,10.151 C32.7257,10.151 30.4527,7.879 30.4527,5.075 C30.4527,2.272 32.7257,-2.13162821e-14 35.5297,-2.13162821e-14 Z M5.075,10.1508 C7.879,10.1508 10.151,12.4238 10.151,15.2268 C10.151,18.0298 7.879,20.3018 5.075,20.3018 C2.272,20.3018 3.07309733e-13,18.0298 3.07309733e-13,15.2268 C3.07309733e-13,12.4238 2.272,10.1508 5.075,10.1508 Z"
+            id="Logo_pittogramma" fill="#003595"></path>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <div id="passwordChanged">
+    <div id="containerPasswordChanged">
+      <h2>Password cambiata</h2>
+      <img src="/static/assets/check_ok.png" alt="">
+      <a id="linkToHome" href="http://localhost:4200" >Vai al badgeverso</a>
+    </div>
+  </div>
+  <div id="errorPassword">
+    <div id="containerError">
+      <h2>Errore</h2>
+      <img src="/static/assets/error.png" alt="">
+      <div id="errorMessage" ></div>
+      <i id="refresh" >Riprova</i>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/static/javascript/scripts.js"></script>
 </body>
+
 </html>

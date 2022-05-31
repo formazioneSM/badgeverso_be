@@ -991,13 +991,16 @@
     "ConvenzioneDTO": {
       "type": "object",
       "properties": {
-        "titolo": {
+        "titoloLink": {
           "type": "string"
         },
         "text": {
           "type": "string"
         },
-        "link": {
+        "url": {
+          "type": "string"
+        },
+        "titolo": {
           "type": "string"
         }
       }

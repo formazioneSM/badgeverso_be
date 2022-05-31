@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600&display=swap');
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Hind Madurai', sans-serif;
+}
+#backdrop #containerLogo svg{
+    max-width: 100%;
+    width: 200px;
+    height: 100px;
+}
+#backdrop #containerLogo{
+    animation: pulse 1s ease-in-out infinite forwards;
+    width: 200px;
+    margin: auto;
+    z-index: 10;
+}
+#backdrop{
+    display: flex;
+    visibility: hidden;
+    z-index: 10;
+    pointer-events: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #0000004b;
+}
+#formChangePass input::placeholder{
+    color:#00000080;
+}
+#formChangePass input{
+    height: 53px;    
+    border-radius: 10px;
+    background: #F1F2F2;
+    border: 1px solid #C6D1E4;
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: 'Hind Madurai', sans-serif;
+    padding: 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: #000000;
+}
+button:disabled{
+    background-color: #C1C1C1;
+    color: #545454;
+    cursor: not-allowed;
+}
+button{
+    border: none;
+    height: 62px;
+    width: 100%;
+    background: #003594;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'Hind Madurai', sans-serif;
+}
+#passwordChanged{
+    visibility: hidden;
+    pointer-events: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+#errorPassword #containerError i {
+    cursor: pointer;
+    text-decoration: underline;
+}
+#errorPassword #containerError img, #passwordChanged #containerPasswordChanged img{
+    width: 150px;
+}
+#errorPassword #containerError, #passwordChanged #containerPasswordChanged{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#errorPassword{
+    visibility: hidden;
+    pointer-events: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+#formChangePass #containerImages{
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+}
+#formChangePass #logo{
+    margin: auto 0 0 auto;
+}
+#formChangePass #puntino{
+    margin: auto auto 4px 5px;
+}
+#formChangePass{
+    flex-direction: column;
+    display: flex;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+@-webkit-keyframes pulse{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: .3;
+    }
+}

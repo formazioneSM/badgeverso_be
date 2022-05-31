@@ -106,13 +106,14 @@ exports.forgotPassword = async (req, res, next) => {
 }
 exports.changePassword = async (req, res, next) => {
   try {
-   await User.findOneAndUpdate(
+  const user = await User.findOneAndUpdate(
       { 'passwordChangeKey' : req.params.passwordChangeKey},
       { 
         $set: {'password': bcrypt.hashSync(req.body.password)},
         $unset: {'passwordChangeKey': 1}
       }
     )
+    if(!user) return res.status(404).json({message: 'unable to find user'})
     return res.json({ message: 'OK' })
   } catch (error) {
     next(error)

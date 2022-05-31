@@ -29,7 +29,8 @@ app.use(
 );
 app.use('/api', apiRouter)
 app.set('views', path.join(__dirname, '../views'))
-app.use('/static', express.static(path.join(__dirname, '../public/javascript')))
+app.use('/static', express.static(path.join(__dirname, '../public/')))
+
 app.use('/config', express.static(path.join(__dirname, '../config')))
 app.get('/', (req, res) => {
   res.render( 'pages/home')
