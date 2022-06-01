@@ -4,14 +4,16 @@ const bcrypt = require('bcrypt-nodejs')
 const httpStatus = require('http-status')
 const APIError = require('../utils/APIError')
 const transporter = require('../services/transporter')
-const config = require('../config')
+const config = require('../config');
+const getTemplate = require('../utils/mailTemplate')
+
 const Schema = mongoose.Schema
 
 const roles = [
   'user', 'admin'
 ]
 
-const fields = ['id', 'name', 'surname', 'badge', 'email', 'createdAt', 'role']
+const fields = ['id', 'name', 'surname', 'badge', 'email', 'createdAt', 'role', 'img']
 
 const userSchema = new Schema({
   email: {
@@ -57,6 +59,11 @@ const userSchema = new Schema({
     type: String,
     default: 'user',
     enum: roles
+  },
+  img: {
+    type: String,
+    required: false,
+    default: ''
   }
 }, {
   timestamps: true
@@ -82,8 +89,8 @@ userSchema.post('save', async function saved (doc, next) {
     const mailOptions = {
       from: 'noreply',
       to: this.email,
-      subject: 'Confirm creating account',
-      html: `<div><h1>Hello new user!</h1><p>Click <a href="${config.hostname}/api/auth/confirm?key=${this.activationKey}">link</a> to activate your new account.</p></div><div><h1>Hello developer!</h1><p>Feel free to change this template ;).</p></div>`
+      subject: 'Conferma creazione account',
+      html: getTemplate('Benvenuto nel badgeverso!', `<p>Click <a href="${config.hostname}/api/auth/confirm?key=${this.activationKey}">link</a> per attivare il tuo nuovo account.</p>`) 
     }
 
     transporter.sendMail(mailOptions, function (error, info) {

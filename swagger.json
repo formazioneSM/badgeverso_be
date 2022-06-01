@@ -198,6 +198,70 @@
         ]
       }
     },
+    "/users/:id": {
+      "put": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "modifica l'immagine di un utente ricercandolo attraverso il suo id",
+        "description": "",
+        "operationId": "editImageUser",
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Authorization",
+            "description": "Authorization",
+            "required": true
+          },
+          {
+            "in": "params",
+            "name": "id",
+            "description": "id dell'utente",
+            "required": true
+          },
+          {
+            "in": "formData",
+            "name": "file",
+            "type":"file",
+            "description": "file immagine da inviare",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "url immagine",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Not Authorized",
+            "schema": {
+              "$ref": "#/definitions/401"
+            }
+          }
+        },
+        "security": [
+          {
+            "sm_auth": [
+              "writeimg:users"
+            ]
+          }
+        ]
+      }
+     
+    },
     "/bacheca/:id": {
       "put": {
         "tags": [
