@@ -1035,6 +1035,9 @@
         },
         "badge": {
           "type": "string"
+        },
+        "img": {
+          "type": "string"
         }
       }
     },
