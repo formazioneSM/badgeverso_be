@@ -2,6 +2,8 @@
 
 const User = require('../models/user.model')
 const config = require('../config');
+const fs = require('fs');
+const path = require('path');
 exports.findByBadge = async (req, res, next) => {
   try {
     const results = await User.find({badge: { "$regex": req.params.badge+"$", "$options": "i" }  }).limit(5)
@@ -32,7 +34,14 @@ exports.userExists = async (req, res, next) => {
 }
 exports.editImg = async (req, res, next) => {
   try {
-    await User.findByIdAndUpdate(req.params.id, {img: config.hostname+'/uploads/'+req.file.filename} );
+    const user = await User.findByIdAndUpdate(req.params.id, {img: config.hostname+'/uploads/'+req.file.filename} );
+    if(user.img !== ''){
+      let splittedUrl = user.img.split('/');
+      let filename = splittedUrl[splittedUrl.length-1];
+      if(fs.existsSync(path.join(__dirname, '../public/uploads/'+filename))){
+        await fs.unlinkSync(path.join(__dirname, '../public/uploads/'+filename));
+      }
+    }
     res.send({url: config.hostname+'/uploads/'+req.file.filename});
   } catch (error) {
     next(error)
