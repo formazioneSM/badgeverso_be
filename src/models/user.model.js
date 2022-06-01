@@ -13,7 +13,7 @@ const roles = [
   'user', 'admin'
 ]
 
-const fields = ['id', 'name', 'surname', 'badge', 'email', 'createdAt', 'role', 'img']
+const fields = ['id', 'name', 'surname', 'badge', 'email', 'createdAt', 'role', 'img', 'badgeImg']
 
 const userSchema = new Schema({
   email: {
@@ -61,6 +61,11 @@ const userSchema = new Schema({
     enum: roles
   },
   img: {
+    type: String,
+    required: false,
+    default: ''
+  },
+  badgeImg: {
     type: String,
     required: false,
     default: ''

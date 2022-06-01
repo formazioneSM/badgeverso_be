@@ -22,7 +22,8 @@ const userController = require('../../../controllers/user.controller');
 
 const auth = require('../../../middlewares/authorization')
 
-router.put('/:id', auth() ,userController.userExists, upload.single('file'), userController.editImg);
+router.put('/image/:id', auth() ,userController.userExists, upload.single('file'), userController.editImg);
+router.put('/badgeImg/:id', auth(), userController.userExists, upload.single('file'), userController.editBadgeImg);
 router.get('/:badge', auth(), userController.findByBadge);
 router.put('/:badge', auth(['admin']), userController.edit);
 router.delete('/:badge', auth(['admin']), userController.delete);

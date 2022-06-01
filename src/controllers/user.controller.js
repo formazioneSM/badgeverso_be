@@ -47,6 +47,21 @@ exports.editImg = async (req, res, next) => {
     next(error)
   }
 }
+exports.editBadgeImg = async (req, res, next) => {
+  try {
+    const user = await User.findByIdAndUpdate(req.params.id, {badgeImg: config.hostname+'/uploads/'+req.file.filename} );
+    if(user.badgeImg !== ''){
+      let splittedUrl = user.badgeImg.split('/');
+      let filename = splittedUrl[splittedUrl.length-1];
+      if(fs.existsSync(path.join(__dirname, '../public/uploads/'+filename))){
+        await fs.unlinkSync(path.join(__dirname, '../public/uploads/'+filename));
+      }
+    }
+    res.send({url: config.hostname+'/uploads/'+req.file.filename});
+  } catch (error) {
+    next(error)
+  }
+}
 exports.delete = async (req, res, next) => {
   try {
     const result = await User.findOneAndDelete({badge: { "$regex": req.params.badge+"$", "$options": "i" }})
