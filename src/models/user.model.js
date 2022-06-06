@@ -152,17 +152,18 @@ userSchema.statics = {
     return user;
   },
   async findAndGenerateToken (payload) {
-    const { email, password } = payload
-    if (!email) throw new APIError('Email must be provided for login')
-
+    const { email, password } = payload;
+    if(!email && !password) throw new APIError(`Email and password required!`, httpStatus.BAD_REQUEST, {email: 'Email non valida!', password: 'Password non valida!'});
+    if (!email) throw new APIError('Email must be provided for login',httpStatus.BAD_REQUEST, {email: 'Inserire una mail!'})
+    if (!password) throw new APIError('Password  must be provided for login',httpStatus.BAD_REQUEST, {email: 'Inserire una password!'})
     const user = await this.findOne({ email }).exec()
-    if (!user) throw new APIError(`No user associated with ${email}`, httpStatus.NOT_FOUND)
+    if (!user) throw new APIError(`No user associated with ${email}`, httpStatus.NOT_FOUND, {email: 'Utente non trovato!'})
 
     const passwordOK = await user.passwordMatches(password)
 
-    if (!passwordOK) throw new APIError(`Password mismatch`, httpStatus.UNAUTHORIZED)
+    if (!passwordOK) throw new APIError(`Password mismatch`, httpStatus.UNAUTHORIZED, {password: 'Password sbagliata, riprova!'})
 
-    if (!user.active) throw new APIError(`User not activated`, httpStatus.UNAUTHORIZED)
+    if (!user.active) throw new APIError(`User not activated`, httpStatus.UNAUTHORIZED, {email: 'Utente non attivo!'})
 
     return user
   }
