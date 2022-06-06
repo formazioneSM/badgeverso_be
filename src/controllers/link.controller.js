@@ -43,10 +43,10 @@ exports.delete = async (req, res, next) => {
 exports.create = async (req, res, next) => {
     try {
       const body = req.body
-      const bacheca = new Link(body)
-      const savedConvenzione = await bacheca.save()
+      const link = new Link(body)
+      const savedLink = await link.save()
       res.status(httpStatus.CREATED)
-      res.send(savedConvenzione)
+      res.send(savedLink)
     } catch (error) {
         next(error)
     }

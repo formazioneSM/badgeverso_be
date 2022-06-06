@@ -21,7 +21,7 @@ linkSchema.statics = {
       throw new APIError('invalid key provided for edit post', httpStatus.BAD_REQUEST, { acceptedFields: fields })
     }
     const link = await this.find(payload).exec()
-    return convenzione;
+    return link;
   }
 }
 module.exports = mongoose.model('Link', linkSchema)

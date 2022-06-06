@@ -855,6 +855,271 @@
         ]
       }
     },
+    "/link/:id": {
+      "put": {
+        "tags": [
+          "Link"
+        ],
+        "summary": "modifica una link ricercandolo attraverso il suo id",
+        "description": "",
+        "operationId": "editLink",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Authorization",
+            "description": "Authorization",
+            "required": true
+          },
+          {
+            "in": "params",
+            "name": "id",
+            "description": "id link",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "link",
+            "description": "una qualisasi delle property dell'oggetto Link",
+            "type": "object",
+            "schema": {
+              "$ref": "#/definitions/linkDTO"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "convenzione modificata",
+            "schema": {
+              "$ref": "#/definitions/ConvenzioneDTO"
+            }
+          },
+          "401": {
+            "description": "Not Authorized",
+            "schema": {
+              "$ref": "#/definitions/401"
+            }
+          }
+        },
+        "security": [
+          {
+            "sm_auth": [
+              "write:convenzione"
+            ]
+          }
+        ]
+      },
+      "get": {
+        "tags": [
+          "Link"
+        ],
+        "summary": "recupera un link ricercandolo attraverso il suo id",
+        "description": "",
+        "operationId": "readLinkById",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Authorization",
+            "description": "Authorization",
+            "required": true
+          },
+          {
+            "in": "params",
+            "name": "id",
+            "description": "id link",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "dettaglio link",
+            "schema": {
+              "$ref": "#/definitions/linkDTO"
+            }
+          },
+          "401": {
+            "description": "Not Authorized",
+            "schema": {
+              "$ref": "#/definitions/401"
+            }
+          }
+        },
+        "security": [
+          {
+            "sm_auth": [
+              "write:link"
+            ]
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Link"
+        ],
+        "summary": "elimina un link ricercandolo attraverso il suo id",
+        "description": "",
+        "operationId": "deleteLink",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Authorization",
+            "description": "Authorization",
+            "required": true
+          },
+          {
+            "in": "params",
+            "name": "id",
+            "description": "id link",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "link eliminato",
+            "schema": {
+              "$ref": "#/definitions/linkDTO"
+            }
+          },
+          "401": {
+            "description": "Not Authorized",
+            "schema": {
+              "$ref": "#/definitions/401"
+            }
+          }
+        },
+        "security": [
+          {
+            "sm_auth": [
+              "delete:link"
+            ]
+          }
+        ]
+      }
+    },
+    "/link/all": {
+      "get": {
+        "tags": [
+          "Link"
+        ],
+        "summary": "recupera tutti i link disponibili",
+        "description": "",
+        "operationId": "getLink",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Authorization",
+            "description": "Authorization",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "lista dei link",
+            "schema": {
+              "$ref": "#/definitions/linkDTO"
+            }
+          },
+          "401": {
+            "description": "Not Authorized",
+            "schema": {
+              "$ref": "#/definitions/401"
+            }
+          }
+        },
+        "security": [
+          {
+            "sm_auth": [
+              "read:link"
+            ]
+          }
+        ]
+      }
+    },
+    "/link": {
+      "post": {
+        "tags": [
+          "Link"
+        ],
+        "summary": "crea un nuovo link",
+        "description": "",
+        "operationId": "createLink",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "Authorization",
+            "description": "Authorization",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "Convenzione",
+            "description": "nuovo oggetto di tipo link",
+            "type": "object",
+            "schema": {
+              "$ref": "#/definitions/linkDTO"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "post link creato",
+            "schema": {
+              "$ref": "#/definitions/linkDTO"
+            }
+          },
+          "401": {
+            "description": "Not Authorized",
+            "schema": {
+              "$ref": "#/definitions/401"
+            }
+          },
+          "400": {
+            "description":"Bad request",
+            "schema": {
+              "$ref": "#/definitions/error"
+            }
+          }
+        },
+        "security": [
+          {
+            "sm_auth": [
+              "write:link"
+            ]
+          }
+        ]
+      }
+    },
     "/auth/checkToken": {
       "get": {
         "tags": [
@@ -1131,6 +1396,17 @@
           "type": "string"
         },
         "titolo": {
+          "type": "string"
+        }
+      }
+    },
+    "linkDTO": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "url": {
           "type": "string"
         }
       }
