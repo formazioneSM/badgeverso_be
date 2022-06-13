@@ -31,8 +31,10 @@ exports.login = async (req, res, next) => {
       admin:user.role === 'admin', 
       id: user._id, 
       name: user.name, 
+      badge: user.badge,
       surname: user.surname,
-      email: user.email
+      email: user.email,
+      img: user.img
     }
     const token = jwt.sign(payload, config.secret)
     return res.json({ message: 'OK', token: token })

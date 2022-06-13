@@ -16,7 +16,7 @@ const swaggerUi = require('swagger-ui-express'),
 swaggerDocument = require('../../swagger.json');
 app.use(bodyParser.json())
 app.use(cors())
-app.use(helmet({ contentSecurityPolicy: {  useDefaults: true, directives: { 'script-src': ["'self'", "https://cdn.jsdelivr.net"]  }  }  }))
+app.use(helmet({ contentSecurityPolicy: {  useDefaults: true, directives: { 'script-src': ["'self'", "https://cdn.jsdelivr.net"]  }  }, crossOriginResourcePolicy: false  }))
 app.set('view engine', 'ejs')
 if (config.env !== 'test') app.use(morgan('combined'))
 // passport
