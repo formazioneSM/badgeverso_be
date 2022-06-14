@@ -5,7 +5,7 @@ const Link = require('../models/link.model')
 
 exports.findAll = async (req, res, next) => {
   try {
-    const results = await Link.find({})
+    const results = await Link.find({}).sort({_id: -1})
     if(results.length === 0) return res.status(200).json([])
     res.send(results);
   } catch (error) {

@@ -5,7 +5,7 @@ const Bacheca = require('../models/bacheca.model')
 
 exports.findAll = async (req, res, next) => {
   try {
-    const results = await Bacheca.find({})
+    const results = await Bacheca.find({}).sort({_id: -1})
     if(results.length === 0) return res.status(200).json([])
     res.send(results);
   } catch (error) {
